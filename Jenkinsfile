@@ -11,13 +11,13 @@ pipeline {
     }
     stages {
         stage('SCM') {
-            step {
+            steps {
                 git url 'https://github.com/AmrutAnkalagi/jenkinrepo.git'
                 branch 'main'
             }              
         }
         stage ('Build') {
-            step {
+            steps {
                 sh 'mvn clean package'
             }
         }
