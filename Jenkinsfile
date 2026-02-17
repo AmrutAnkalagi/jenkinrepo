@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('SCM') {
             steps {
-                git url 'https://github.com/AmrutAnkalagi/jenkinrepo.git'
+                git url 'https://github.com/spring-projects/spring-petclinic.git'
                 branch 'main'
             }              
         }
